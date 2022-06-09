@@ -1,0 +1,2933 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "Lucida-Grande";
+  src: url("./assets/Lucida-Grande-Regular-Font.ttf") format("woff2"),
+    url("./assets/Lucida-Grande-Regular-Font.ttf") format("woff");
+}
+@font-face {
+  font-family: "HelveticaNeueLTProBd";
+  src: url("./assets/HelveticaNeueLTProBd.otf") format("opentype");
+}
+@font-face {
+  font-family: "HelveticaNeueLTPro-Lt";
+  src: url("./assets/HelveticaNeueLTPro-Lt.otf") format("opentype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes thrill {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  15% {
+    -webkit-transform: scale3d(0.98, 1.15, 1);
+    transform: scale3d(0.98, 1.15, 1);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 0.99, 1);
+    transform: scale3d(1.1, 0.99, 1);
+  }
+  25% {
+    -webkit-transform: scale3d(0.98, 1.01, 1);
+    transform: scale3d(0.98, 1.01, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes thrill {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  15% {
+    -webkit-transform: scale3d(0.98, 1.15, 1);
+    transform: scale3d(0.98, 1.15, 1);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 0.99, 1);
+    transform: scale3d(1.1, 0.99, 1);
+  }
+  25% {
+    -webkit-transform: scale3d(0.98, 1.01, 1);
+    transform: scale3d(0.98, 1.01, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes es-pulse {
+  0% {
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  10% {
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+  }
+  30% {
+    -webkit-filter: contrast(0.75);
+    filter: contrast(0.75);
+  }
+  60% {
+    -webkit-filter: contrast(1.5);
+    filter: contrast(1.5);
+  }
+  80% {
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+  }
+  100% {
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+}
+@keyframes es-pulse {
+  0% {
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  10% {
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+  }
+  30% {
+    -webkit-filter: contrast(0.75);
+    filter: contrast(0.75);
+  }
+  60% {
+    -webkit-filter: contrast(1.5);
+    filter: contrast(1.5);
+  }
+  80% {
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+  }
+  100% {
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+}
+@-webkit-keyframes es-pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes es-pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@-webkit-keyframes es-resize {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes es-resize {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes es-resizeAndMove {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px);
+  }
+  30% {
+    -webkit-transform: scale(1.25) translateY(-30px);
+    transform: scale(1.25) translateY(-30px);
+  }
+  70% {
+    -webkit-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes es-resizeAndMove {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px);
+  }
+  30% {
+    -webkit-transform: scale(1.25) translateY(-30px);
+    transform: scale(1.25) translateY(-30px);
+  }
+  70% {
+    -webkit-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes es-resize2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes es-resize2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes es-resizeAndColor {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: contrast(10);
+    filter: contrast(10);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes es-resizeAndColor {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: contrast(10);
+    filter: contrast(10);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes arrow_move {
+  0% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+@keyframes arrow_move {
+  0% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes star_move {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes star_move {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  45% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  45% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes box-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 30px #aaa;
+    box-shadow: 0 0 30px #aaa;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 120px #30316e;
+    box-shadow: 0 0 120px #30316e;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px #aaa;
+    box-shadow: 0 0 30px #aaa;
+  }
+}
+@keyframes box-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 30px #aaa;
+    box-shadow: 0 0 30px #aaa;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 120px #30316e;
+    box-shadow: 0 0 120px #30316e;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px #aaa;
+    box-shadow: 0 0 30px #aaa;
+  }
+}
+@-webkit-keyframes es-hide-cur {
+  0% {
+    -webkit-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+  20% {
+    -webkit-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+  }
+  40% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  100% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+}
+@keyframes es-hide-cur {
+  0% {
+    -webkit-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+  20% {
+    -webkit-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+  }
+  40% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  100% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+}
+@-webkit-keyframes es-show-cur {
+  0% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  20% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  40% {
+    -webkit-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes es-show-cur {
+  0% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  20% {
+    -webkit-transform: translate(110%, -70px);
+    transform: translate(110%, -70px);
+    margin-bottom: -120px;
+  }
+  40% {
+    -webkit-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  max-width: 960px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #fff;
+  background: #fff;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 {
+    max-width: 660px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 {
+    max-width: 400px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 h2,
+#es-magne-forte_0522_1.es-magne-forte_0522_1 h3,
+#es-magne-forte_0522_1.es-magne-forte_0522_1 h4,
+#es-magne-forte_0522_1.es-magne-forte_0522_1 h5,
+#es-magne-forte_0522_1.es-magne-forte_0522_1 p {
+  font-family: "Asap Condensed", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .text_bold {
+  font-weight: 700;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .textLight {
+  font-weight: 300;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__span {
+  font-weight: 700;
+  font-family: "Asap Condensed", sans-serif;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sup,
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sub {
+  font-size: 0.6em;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sup {
+  position: relative;
+  top: -0.5em;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sub {
+  position: relative;
+  top: 0.4em;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__divider {
+  width: 92%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #fff;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sectionTitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  text-align: center;
+  font-size: 33.6px;
+  padding: 0.2em 0;
+  width: 100%;
+  background-color: #a2203e;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sectionTitle {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sectionTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__sectionTitle {
+    font-size: 22px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__invisible {
+  opacity: 0;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__displayNone {
+  -webkit-transform: translateY(-300px);
+  -ms-transform: translateY(-300px);
+  transform: translateY(-300px);
+  opacity: 0;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-general__tableCntHidden {
+  height: 40px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv {
+  position: relative;
+  overflow: hidden;
+  background: url("./images/kv_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv {
+    background-size: cover;
+    background-position: -100px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__newText {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  right: 0;
+  color: #a2203e;
+  background-color: #fff;
+  font-family: "HelveticaNeueLTProBd", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 44.16px;
+  margin-top: 67.2px;
+  font-weight: 700;
+  padding: 0.35em 0.5em 0.2em 0.5em;
+  z-index: 10;
+  -webkit-animation: es-resize2 infinite 3s;
+  animation: es-resize2 infinite 3s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__newText {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__newText {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__newText {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__newText {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__header {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  text-transform: uppercase;
+  font-size: 81.6px;
+  line-height: 86.4px;
+  width: 100%;
+  text-align: center;
+  margin: 28.8px 0;
+  letter-spacing: 0.08em;
+  -webkit-animation: es-resize2 infinite 3s 0.2s;
+  animation: es-resize2 infinite 3s 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__header {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__header {
+    font-size: 50px;
+    line-height: 54px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__header {
+    font-size: 40px;
+    line-height: 43px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__header {
+    font-size: 36px;
+    line-height: 39px;
+    margin-top: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__packshotCnt {
+  position: relative;
+  margin-bottom: 38.4px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__mainProductImgCnt {
+  width: 69%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__mainProductImgCnt {
+    width: 80%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__mainProductImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__100ImgCnt {
+  position: absolute;
+  width: 20%;
+  top: -25%;
+  right: 8%;
+  -webkit-animation: es-resize2 infinite 3s 0.4s;
+  animation: es-resize2 infinite 3s 0.4s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-kv__100Img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben {
+    margin-top: 30px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__ticksCnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 17.28px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 55%;
+  margin-bottom: 10.56px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickItem {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickItem {
+    width: 90%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickImgCnt {
+  width: 14%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  text-transform: uppercase;
+  background-color: #a2203e;
+  font-size: 35.52px;
+  font-family: "HelveticaNeueLTProBd", sans-serif;
+  height: 60px;
+  margin-left: 5px;
+  width: 83%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-ben__tickText
+  .es-general__sup {
+  margin-top: -1em;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText:hover {
+  -webkit-filter: contrast(1.8);
+  filter: contrast(1.8);
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+    font-size: 28px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+    font-size: 22px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+    font-size: 18px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__tickText {
+    font-size: 16px;
+    height: 30px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoCnt {
+  padding: 57.6px 8%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoCnt {
+    padding: 76.8px 4%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoCnt {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: right;
+  padding: 7.68px 24px;
+  width: 45%;
+  border-right: 3px solid #324a8b;
+  border-bottom: 3px solid #324a8b;
+  position: relative;
+  z-index: 5;
+  margin-bottom: -10px;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: translateX(1200px);
+  -ms-transform: translateX(1200px);
+  transform: translateX(1200px);
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem {
+    top: -35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem {
+    border: none;
+    width: 80%;
+    top: -65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem {
+    top: -85px;
+    width: 100%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem:last-child {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  text-align: left;
+  border-left: 3px solid #324a8b;
+  border-top: 3px solid #324a8b;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: translateX(-1200px);
+  -ms-transform: translateX(-1200px);
+  transform: translateX(-1200px);
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-ben__infoItem:last-child.es-ben__infoItemActive {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem:last-child {
+    top: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem:last-child {
+    border: none;
+    width: 80%;
+    top: 75px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoItem:last-child {
+    top: 100px;
+    width: 86%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-ben__infoItem.es-ben__infoItemActive {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoBold {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #a2203e;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 28.8px;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoBold {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoBold {
+    font-size: 18px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__info {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #30316e;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 21.12px;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__info {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__info {
+    font-size: 16px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__circle {
+  position: absolute;
+  width: 32.5%;
+  height: 72%;
+  border-radius: 100%;
+  -webkit-animation: box-shadow 3s infinite ease;
+  animation: box-shadow 3s infinite ease;
+  top: 48%;
+  left: 49.25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__circle {
+    width: 54%;
+    top: 47.5%;
+    left: 49%;
+  }
+}
+@media screen and (max-width: 360px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__circle {
+    width: 59.5%;
+    height: 70%;
+    top: 47.75%;
+    left: 48.75%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoImgCnt {
+  position: relative;
+  top: -96px;
+  margin-bottom: -222.72px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoImg {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 360px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__infoImg {
+    width: 85%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__mgImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 57.6px;
+  position: absolute;
+  top: 76.8px;
+  right: 41%;
+  z-index: 10;
+  -webkit-animation: es-resize 3s infinite;
+  animation: es-resize 3s infinite;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__mgImg {
+    top: 50px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__mgImg {
+    width: 45px;
+    right: 37%;
+    top: 60px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__mgImg {
+    width: 40px;
+    right: 32%;
+    top: 60px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__b6Img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 57.6px;
+  position: absolute;
+  bottom: 96px;
+  left: 44%;
+  z-index: 10;
+  -webkit-animation: es-resize 3s infinite 0.2s;
+  animation: es-resize 3s infinite 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__b6Img {
+    bottom: 60px;
+    width: 40px;
+    left: 42%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__b6Img {
+    width: 45px;
+    bottom: 70px;
+    left: 36%;
+  }
+}
+@media screen and (max-width: 330px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-ben__b6Img {
+    width: 40px;
+    bottom: 70px;
+    left: 32%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur {
+  position: relative;
+  margin-top: 57.6px;
+  margin-bottom: 57.6px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+  position: absolute;
+  top: -45.12px;
+  right: 4.5%;
+  width: 15%;
+  z-index: 20;
+  -webkit-animation: thrill 3s infinite;
+  animation: thrill 3s infinite;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+    top: -30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+    top: -25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+    width: 18%;
+    top: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImgCnt {
+    width: 18%;
+    top: -10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__questionImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__sectionTitle {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__mainCnt {
+  background: url("./images/bg_questions3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  z-index: 12;
+  -webkit-animation: es-show-cur 1s forwards;
+  animation: es-show-cur 1s forwards;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cur__mainCnt.es-cur__mainCntHide {
+  -webkit-animation: es-hide-cur 2s forwards;
+  animation: es-hide-cur 2s forwards;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__mainCnt {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__mainCnt {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  width: 100%;
+  text-align: center;
+  padding-top: 57.6px;
+  font-size: 22.08px;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text {
+    padding-top: 50px;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text {
+    font-size: 14px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text:last-child {
+  padding-top: 19.2px;
+  padding-bottom: 76.8px;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text:last-child {
+    padding-bottom: 50px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text .es-cur__span {
+  text-transform: uppercase;
+  font-size: 22.08px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text .es-cur__span {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text .es-cur__span {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cur__text .es-cur__span {
+    font-size: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table {
+  position: relative;
+  width: 100%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-table
+  .es-general__sectionTitle {
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__arrow {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 38.4px;
+  line-height: 28.8px;
+  margin-left: 5px;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__arrowClose {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__tableCnt {
+  width: 84%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: auto;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  margin-top: 45.12px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-table__tableCnt.es-general__tableCntClosed {
+  margin-bottom: -200px;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__tableCnt {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__tableCnt {
+    text-align: center;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__itemsCnt {
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  border: 3px solid #a2203e;
+  border-top: none;
+  padding: 33.6px 3% 14.4px 5%;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__itemsCnt {
+    padding: 24px 2% 0px 2%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #324a8b;
+  font-size: 20.16px;
+  letter-spacing: 0.08em;
+  padding-bottom: 9.6px;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item {
+    font-size: 18px;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item {
+    font-size: 14px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item:nth-child(2) {
+  padding-bottom: 24px;
+  padding-top: 11.52px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__item:last-child {
+  padding-bottom: 28.8px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-table__itemSpan {
+  font-weight: 700;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-table.es-tableSecond
+  .es-table__tableCnt.es-general__tableCntClosed {
+  margin-bottom: -325px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons {
+  position: relative;
+  width: 100%;
+  padding-top: 86.4px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__mainCnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__mainCnt {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 28%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-icons__item:nth-child(1)
+  .es-icons__iconImgCnt {
+  -webkit-animation: es-resizeAndMove 3.5s infinite;
+  animation: es-resizeAndMove 3.5s infinite;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-icons__item:nth-child(2)
+  .es-icons__iconImgCnt {
+  -webkit-animation: es-resizeAndMove 3.5s infinite 0.2s;
+  animation: es-resizeAndMove 3.5s infinite 0.2s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-icons__item:nth-child(3)
+  .es-icons__iconImgCnt {
+  -webkit-animation: es-resizeAndMove 3.5s infinite 0.4s;
+  animation: es-resizeAndMove 3.5s infinite 0.4s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__item {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__item {
+    width: 65%;
+    margin-bottom: 70px;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__item:last-child {
+    margin-bottom: 20px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__iconImgCnt {
+  width: 55%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__iconImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__infoBold {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #a2203e;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 28.8px;
+  letter-spacing: 0.08em;
+  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__infoBold {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__infoBold {
+    font-size: 22px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__info {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #324a8b;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 26.88px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__info {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-icons__info {
+    font-size: 20px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body {
+  position: relative;
+  margin-top: 96px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body {
+    margin-top: 50px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body
+  .es-general__sectionTitle {
+  padding: 24px 10px;
+  font-size: 30.72px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-body
+    .es-general__sectionTitle {
+    font-size: 26px;
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-body
+    .es-general__sectionTitle {
+    font-size: 23px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainCnt {
+  position: relative;
+  overflow: hidden;
+  background: url("./images/bg_body.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainCnt {
+    background-size: cover;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainInfo {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 72px auto;
+  margin-bottom: 62.4px;
+  width: 83.5%;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 9.6px 20px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainInfo {
+    margin: 40px auto;
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainInfo > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainInfo {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__mainInfo {
+    font-size: 17px;
+    width: 90%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__itemsCnt {
+  width: 83.5%;
+  margin: 0 auto;
+  background: url("./images/body.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 20px;
+  min-height: 714px;
+  background-size: 510px 729.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__itemsCnt {
+    width: 95%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__info {
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  font-size: 23.04px;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.3em;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem {
+    font-size: 13px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:hover
+  .es-body__info {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(1)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite;
+  animation: es-resizeAndColor 3s infinite;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(1) {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(1) {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(1) {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(1) {
+    margin-top: 0px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(2) {
+  margin-top: -13.44px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(2)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.1s;
+  animation: es-resizeAndColor 3s infinite 0.1s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(2) {
+    margin-top: -5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(2) {
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(2) {
+    margin-top: -4px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(3) {
+  margin-top: -11.52px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(3)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.2s;
+  animation: es-resizeAndColor 3s infinite 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(3) {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(3) {
+    margin-top: 5px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(4) {
+  margin-top: 38.4px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(4)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.3s;
+  animation: es-resizeAndColor 3s infinite 0.3s;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(4) {
+    margin-top: 45px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(5) {
+  width: 46%;
+  margin-top: -4.8px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(5)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.4s;
+  animation: es-resizeAndColor 3s infinite 0.4s;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(5) {
+    margin-top: 0px;
+    width: 44%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(6) {
+  margin-top: 4.8px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(6)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.5s;
+  animation: es-resizeAndColor 3s infinite 0.5s;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(6) {
+    margin-top: 10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(7) {
+  margin-top: -24px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(7)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.6s;
+  animation: es-resizeAndColor 3s infinite 0.6s;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(7) {
+    margin-top: 0px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(8) {
+  width: 46%;
+  margin-top: 192px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItem:nth-child(8)
+  .es-body__circle {
+  -webkit-animation: es-resizeAndColor 3s infinite 0.7s;
+  animation: es-resizeAndColor 3s infinite 0.7s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(8) {
+    width: 44.5%;
+    margin-top: 220px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(8) {
+    width: 42.5%;
+    margin-top: 230px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItem:nth-child(8) {
+    width: 40.5%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__circle {
+  width: 19.2px;
+  height: 19.2px;
+  border: 2px solid #fff;
+  background-color: #a2203e;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -9.6px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemRight {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: right;
+  width: 50%;
+  border-bottom: 2px solid #fff;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItemRight
+  .es-body__circle {
+  left: -9.6px;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemRight {
+    padding-left: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemLeft {
+  width: 50%;
+  border-bottom: 2px solid #fff;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-body__infoItemLeft
+  .es-body__circle {
+  right: -9.6px;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemLeft {
+    padding-right: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemSpan {
+  font-size: 19.2px;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemSpan {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-body__infoItemSpan {
+    font-size: 13px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack {
+  position: relative;
+  width: 100%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-lack
+  .es-general__sectionTitle {
+  padding: 32.64px 10px;
+  font-size: 30.72px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-lack
+    .es-general__sectionTitle {
+    font-size: 26px;
+    padding: 15px 10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__mainCnt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  padding-left: 1%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 1%;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-child(even) {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-child(even) {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-child(even) {
+    margin-left: 0;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-child(odd) {
+    width: 90%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-of-type(4) {
+  width: 53%;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-of-type(4) {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-of-type(4) {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item:nth-of-type(4) {
+    width: 90%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-lack__item:nth-of-type(4)
+  .es-lack__listCnt {
+  padding-top: 28.8px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-lack__item:nth-of-type(4)
+    .es-lack__listCnt {
+    margin-top: -30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item {
+    width: 65%;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__item {
+    width: 85%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__iconImgCnt {
+  width: 130px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__iconImgCnt:hover {
+  -webkit-animation: wiggle infinite 2s;
+  animation: wiggle infinite 2s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__iconImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #324a8b;
+  font-size: 23.04px;
+  letter-spacing: 0.08em;
+  padding-left: 5%;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__desc {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__listCnt {
+  width: 65%;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__listCnt {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__list {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__listItem {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #324a8b;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__listItem {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-lack__listItem {
+    list-style: none;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec {
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 57.6px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-spec
+  .es-general__sectionTitle {
+  font-size: 28.8px;
+  padding: 14.4px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-spec
+    .es-general__sectionTitle
+    > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-spec
+    .es-general__sectionTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-spec
+    .es-general__sectionTitle {
+    font-size: 22px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__mainCnt {
+  background: url("./images/bg_stats.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 48px 7%;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__mainCnt {
+    padding: 24px 3%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__mainCnt {
+    padding: 14.4px 2%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__info {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  margin-top: 25.92px;
+  margin-bottom: 25.92px;
+  font-size: 20.16px;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__info {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__info {
+    font-size: 16px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__mainPercent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__mainPercent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentCnt {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #fff;
+  margin: 7px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentCnt:hover {
+  border: 2px solid #a2203e;
+  color: #a2203e;
+  background-color: #fff;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentCnt {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentCnt {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentCnt {
+    width: 95%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percent {
+  font-size: 67.2px;
+  text-align: right;
+  font-weight: 500;
+  width: 47%;
+  margin-right: 3%;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percent {
+    font-size: 55px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentText {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__percentText {
+    font-size: 20px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__infoBold {
+  text-transform: uppercase;
+  margin: 28.8px auto;
+  font-size: 24.96px;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__infoBold > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__infoBold {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-spec__infoBold {
+    font-size: 17px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-tableSecond
+  .es-table__itemsCnt {
+  padding: 48px 0px 48px 76.8px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__itemsCnt {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__itemsCnt {
+    padding: 15px 10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-tableSecond .es-table__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-tableSecond
+  .es-table__item
+  > p {
+  width: 49%;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__item
+    > p {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__item
+    > p {
+    width: 45%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-tableSecond
+  .es-table__divider {
+  width: 90%;
+  height: 3px;
+  background-color: #a2203e;
+  margin-top: 19.2px;
+  margin-bottom: 28.8px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__divider {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__divider {
+    height: 2px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-tableSecond
+  .es-table__itemSpan {
+  font-size: 24px;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__itemSpan {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__itemSpan {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-tableSecond
+    .es-table__itemSpan {
+    font-size: 16px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross {
+  position: relative;
+  margin-top: 86.4px;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross {
+    margin-top: 50px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cross
+  .es-general__sectionTitle {
+  font-size: 30.72px;
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross
+    .es-general__sectionTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross
+    .es-general__sectionTitle {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross
+    .es-general__sectionTitle {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross
+    .es-general__sectionTitle {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cross
+  .es-general__sectionTitle.es-general__sectionTitleCyan {
+  background-color: #01aeb7;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__mainCnt {
+  position: relative;
+  overflow: hidden;
+  background: url("./images/bg_packshots_13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productsCnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 124.8px;
+  margin-bottom: 86.4px;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productsCnt {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cross__productsCnt:nth-of-type(2) {
+  margin-top: 96px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cross__productsCnt:nth-of-type(2)
+  .es-cross__product {
+  margin: 0 14.4px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-cross__productsCnt:nth-of-type(2)
+  .es-cross__productImgCnt {
+  margin-bottom: 33.6px;
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product {
+    width: 75%;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product
+    .es-cross__productImgCnt {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product {
+    width: 85%;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product
+    .es-cross__productImgCnt {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product
+    .es-cross__productImgCnt {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__productsCnt.es-cross__productsCntSecond
+    .es-cross__product
+    .es-cross__productImgCnt {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productsCnt {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__product {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 4.8px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__product {
+    width: 40%;
+  }
+  #es-magne-forte_0522_1.es-magne-forte_0522_1
+    .es-cross__product:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__product {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__product {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__product {
+    width: 90%;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImgCnt {
+  width: 80%;
+  margin-bottom: 24px;
+  height: 150px;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImgCnt:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: contrast(1.15);
+  filter: contrast(1.15);
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImgCnt {
+    margin-bottom: -10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImgCnt {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImgCnt {
+    margin-bottom: -10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productDesc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  text-align: center;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  font-size: 21.12px;
+  height: 50px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productDesc {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__productDesc {
+    font-size: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__link {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  text-decoration: none;
+  color: #fff;
+  margin: 15px 0;
+  width: 140px;
+  text-align: center;
+  font-size: 19.2px;
+  padding: 4px 8px;
+  border: 3px solid #fff;
+  border-radius: 18px;
+  background-color: #a2203e;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -webkit-animation: es-pulse2 2s infinite;
+  animation: es-pulse2 2s infinite;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__link:hover {
+  -webkit-filter: contrast(200%);
+  filter: contrast(200%);
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__link {
+    font-size: 17px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__link {
+    font-size: 15px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  color: #a2203e;
+  background-color: #fff;
+  font-family: "HelveticaNeueLTProBd", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0.35em 0.8em 0.2em 0.8em;
+  z-index: 10;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    font-size: 22px;
+    top: 400px;
+    right: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    font-size: 20px;
+    top: 400px;
+    right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    font-size: 20px;
+    top: 740px;
+    left: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    top: 690px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    top: 685px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__newText {
+    top: 665px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+  position: absolute;
+  top: 105.6px;
+  right: 4.5%;
+  width: 8.5%;
+  -webkit-animation: es-resize2 infinite 4s 0.2s;
+  animation: es-resize2 infinite 4s 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 430px;
+    right: 210px;
+    width: 10%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 430px;
+    right: 185px;
+    width: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 760px;
+    right: 110px;
+    width: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 710px;
+    right: 50px;
+    width: 18%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 710px;
+    right: 25px;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImgCnt {
+    top: 680px;
+    right: 18px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-cross__infoImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer {
+  position: relative;
+  position: relative;
+  width: 100%;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textCnt {
+  width: 100%;
+  padding: 40px 20px 50px 40px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textCnt {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textCnt {
+    padding: 15px 10px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textItem {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  font-family: "HelveticaNeueLTPro-Lt", sans-serif;
+  color: #324a8b;
+  font-size: 9.6px;
+  line-height: 1.2;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1
+  .es-footer__textItem:nth-of-type(9) {
+  margin-top: 9.6px;
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textItem {
+    font-size: 9px;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+  width: 100%;
+  position: absolute;
+  top: 220.8px;
+  right: 23.04px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+    top: 260px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+    top: 300px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+    top: 320px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+    width: 90px;
+    top: 360px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoCnt {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__logoImg {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  float: right;
+  width: 120px;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__bottomCnt {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+#es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textBottomItem {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: inherit;
+  color: #324a8b;
+  font-weight: 500;
+  font-size: 24px;
+}
+@media screen and (max-width: 1000px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textBottomItem {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textBottomItem {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textBottomItem {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #es-magne-forte_0522_1.es-magne-forte_0522_1 .es-footer__textBottomItem {
+    margin-top: 50px;
+  }
+}
